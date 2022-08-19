@@ -13,6 +13,9 @@ float GLOBAL_DEPTH;
 
 
 /**
+ * Описание протокола
+ * https://wiki.iarduino.ru/page/NMEA-0183/
+ * 
    $SDDBT,64.6,f,19.06,M,10.77,F*3D
    $TIME0,C1*7B
    Можно и так:
