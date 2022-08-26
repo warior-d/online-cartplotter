@@ -168,9 +168,18 @@ void PrintString(char c)
     READY_WRITE = false;
     pos = pos + 1;
     Buffer[pos] = '\0';
-    Serial.println(Buffer);
+    
     is = strstr(Buffer,strFound);
     if (is > 0){
+      /**
+       * Печатать будем ТОЛЬКО
+       * - GPGLL строку (координаты) - как есть
+       * - GPVTG строку (курс + скорость) - подставляем курс, скорость не трогаем
+       * - SDDBT строку сотворяем заново сами :)
+       */
+
+      
+      Serial.println(Buffer);
       float dist_cm = 7;
       byte base = random(0,9);
       float all_depth = base + dist_cm/10;
