@@ -64,6 +64,9 @@ const char *coord[] = {
 
   Course vector
 
+  RMC - Рекомендуемый минимум навигационных данных.
+  VTG - Скорость и курс относительно земли.
+
 */
 boolean READY_WRITE = false;
 
